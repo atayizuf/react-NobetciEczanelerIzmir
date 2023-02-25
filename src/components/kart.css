@@ -1,19 +1,66 @@
+.kapskart{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;    
+}
 .kart{
-    background-color: rgb(25, 172, 135);
+    position: relative;
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(161,16,16,1) 100%); */
+    background: linear-gradient(15deg, rgba(255,68,0,1)0%,rgba(255,0,86,1) 100%);
+    /* background-color: rgb(25, 172, 135); */
     padding: .5rem;
     margin: 0.2rem 0;
     width: 100%;
     border-radius: 1rem;
     border-style: solid;
     border-color: black;
+    display:flex;
+}
 
+.kartyazi{
+    position: relative;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.kartbutton{
+    width: 20%;
+    height: 100%;
+    background-color: #BA0021;
+    position: absolute;
+    border-radius:  0 .7rem .7rem 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    color: aliceblue;
+    user-select: none;
+}
+
+.kartbutton:hover{
+    background-color: #660000;
+    cursor: pointer;
 }
 
 .bolge{
+    color: #E6E6FA;
+
+    left: 0px;
     font-size: 2rem;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .aciklama{
-    color: brown;
+    color: #443C68;
     font-weight: bold;
+    font-size: 1.1rem;
 }

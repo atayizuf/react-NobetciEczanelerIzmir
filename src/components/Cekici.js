@@ -7,7 +7,12 @@ function Cekici() {
   useEffect(() => {
     fetch("https://openapi.izmir.bel.tr/api/ibb/nobetcieczaneler")
       .then((resp) => resp.json())
-      .then((resp) => setVeriler(resp));
+      .then((resp) => {
+        resp.sort(function (a, b) {
+          return a.Bolge.localeCompare(b.Bolge);
+        });
+        setVeriler(resp);
+      });
   }, []);
 
   return (
