@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Baslik from "./Baslik";
 import Kart from "./Kart";
 
 function Cekici() {
@@ -17,6 +18,7 @@ function Cekici() {
 
   return (
     <div>
+      <Baslik />
       <Kart veriler={veriler} />
     </div>
   );

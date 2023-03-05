@@ -16,7 +16,18 @@ function Kart(props) {
                 <div className="aciklama">*** {x.BolgeAciklama} ***</div>
               )}
             </div>
-            <div className="kartbutton">Bas git!</div>
+            <div
+              className="kartbutton"
+              onClick={() => {
+                window.open(
+                  `https://www.google.com/maps/place/${x.LokasyonX},${x.LokasyonY}/@${x.LokasyonX},${x.LokasyonY},17.25z`,
+                  // `https://www.google.com/maps/place/1566+sokak+doğanlar+İzmir+/@${x.LokasyonX},${x.LokasyonY},17.25z`,
+                  "_blank"
+                );
+              }}
+            >
+              Bas git!
+            </div>
           </div>
         </>
       ))}

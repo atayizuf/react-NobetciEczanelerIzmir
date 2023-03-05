@@ -52,14 +52,15 @@
 
 .bolge{
     color: #E6E6FA;
-
-    left: 0px;
+    text-align: left;
+    padding: 7px 0 7px 12px;
     font-size: 2rem;
     font-weight: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .aciklama{
+    margin: 0.5rem 0 0 0;
     color: #443C68;
     font-weight: bold;
     font-size: 1.1rem;
