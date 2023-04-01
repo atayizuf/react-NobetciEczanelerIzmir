@@ -1,11 +1,9 @@
 import React from "react";
-import Arama from "./Arama";
 import "./kart.css";
 
 function Kart(props) {
   return (
     <>
-      <Arama />
       <div className="kapskart">
         {props.veriler.map((x) => (
           <>

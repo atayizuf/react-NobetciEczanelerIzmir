@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Arama from "./Arama";
 import Baslik from "./Baslik";
-import Kart from "./Kart";
 
 function Cekici() {
   const [veriler, setVeriler] = useState([]);
@@ -19,7 +19,7 @@ function Cekici() {
   return (
     <div>
       <Baslik />
-      <Kart veriler={veriler} />
+      <Arama veriler={veriler} />
     </div>
   );
 }

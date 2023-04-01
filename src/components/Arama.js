@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import Kart from "./Kart";
 
-function Arama() {
+function Arama(props) {
   const [ara, setAra] = useState("");
-  console.log(ara);
+
+  // console.log(ara, props);
+  // console.log(props.veriler);
 
   return (
     <div>
@@ -14,6 +17,7 @@ function Arama() {
         placeholder="Bölge Adı ile arama yapın..."
         ara={ara}
       ></input>
+      <Kart veriler={props.veriler} arama={ara} />
     </div>
   );
 }
