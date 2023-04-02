@@ -5,7 +5,7 @@ function Kart(props) {
   return (
     <>
       <div className="kapskart">
-        {props.veriler.map((x) => (
+        {props.veri2.map((x) => (
           <>
             <div className="kart">
               <div className="kartyazi">

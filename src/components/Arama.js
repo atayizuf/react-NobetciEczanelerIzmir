@@ -1,11 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Kart from "./Kart";
 
 function Arama(props) {
   const [ara, setAra] = useState("");
+  const [veri2, setVeri2] = useState([]);
 
-  // console.log(ara, props);
-  // console.log(props.veriler);
+  // componentDidMount(() => {
+  //   setVeri2(props.veriler);
+  // });
+
+  useEffect(() => {
+    setVeri2(
+      props.veriler.filter((x) => {
+        return ara === ""
+          ? x
+          : x.Bolge.toLowerCase().includes(ara.toLowerCase());
+      })
+    );
+  }, [ara]);
 
   return (
     <div>
@@ -17,7 +29,7 @@ function Arama(props) {
         placeholder="Bölge Adı ile arama yapın..."
         ara={ara}
       ></input>
-      <Kart veriler={props.veriler} arama={ara} />
+      <Kart veri2={ara === "" ? props.veriler : veri2} arama={ara} />
     </div>
   );
 }
