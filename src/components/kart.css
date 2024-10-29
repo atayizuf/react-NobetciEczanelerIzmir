@@ -1,72 +1,80 @@
-.kapskart{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;    
+.kapskart {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
-.kart{
-    position: relative;
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(161,16,16,1) 100%); */
-    background: linear-gradient(15deg, rgba(255,68,0,1)0%,rgba(255,0,86,1) 100%);
-    /* background-color: rgb(25, 172, 135); */
-    padding: .5rem;
-    margin: 0.2rem 0;
-    width: 100%;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: black;
-    display:flex;
-}
-
-.kartyazi{
-    position: relative;
-    width: 80%;
-    display:flex;
-    flex-direction: column;
-    /* align-items: center; */
-    font-size: 1rem;
-    font-weight: 500;
+.kart {
+  position: relative;
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(161,16,16,1) 100%); */
+  background: linear-gradient(
+    15deg,
+    rgba(255, 68, 0, 1) 0%,
+    rgba(255, 0, 86, 1) 100%
+  );
+  /* background-color: rgb(25, 172, 135); */
+  margin: 0.2rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.kartbutton{
-    width: 20%;
-    height: 100%;
-    background-color: #BA0021;
-    position: absolute;
-    border-radius:  0 .7rem .7rem 0;
-    right: 0;
-    top: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-weight: bold;
-    color: aliceblue;
-    user-select: none;
+.kartyazi {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.kartbutton:hover{
-    background-color: #660000;
-    cursor: pointer;
+.kartbutton {
+  width: 20%;
+  height: 100%;
+  background-color: #ba0021;
+  position: absolute;
+  border-radius: 0 0.7rem 0.7rem 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #e6e6fa;
+  user-select: none;
 }
 
-.bolge{
-    color: #E6E6FA;
-    text-align: left;
-    padding: 7px 0 7px 12px;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'JetBrains Mono', monospace;
+.kartbutton:hover {
+  background-color: #660000;
+  cursor: pointer;
 }
 
-.aciklama{
-    margin: 0.5rem 0 0 0;
-    color: #443C68;
-    font-weight: bold;
-    font-size: 1.1rem;
+.bolge {
+  color: #e6e6fa;
+  text-align: left;
+  padding: 7px 0 7px 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.ad,.tel,.adres{
-    padding-bottom: 0.35rem;
-    font-weight: bold;
+.aciklama {
+  margin: 0.5rem 0 0 0;
+  color: #f5e2b8;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ad {
+  font-size: 1.2rem;
+}
+
+.tel,
+.adres {
+  padding-bottom: 0.35rem;
+  font-weight: bold;
 }

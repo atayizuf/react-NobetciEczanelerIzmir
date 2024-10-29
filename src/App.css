@@ -2,21 +2,14 @@
   text-align: center;
   width: 100%;
 }
-.baslik1{
+.baslik1 {
   font-size: 2rem;
   color: aliceblue;
-  padding-bottom: 30px;
-  font-family: 'JetBrains Mono', monospace;
+  padding: 25px 30px;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.baslik2{
-  font-size: 2rem;
-  color: aliceblue;
-  padding-bottom: 30px;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.arama{
+.arama {
   width: 94%;
   height: 2.5rem;
   border-radius: 7px;

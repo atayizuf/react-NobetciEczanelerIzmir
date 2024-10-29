@@ -26,7 +26,7 @@ function Kart(props) {
                 );
               }}
             >
-              Bas git!
+              <i class="fa-solid fa-map-location"></i>
             </div>
           </div>
         ))}
