@@ -28,6 +28,17 @@ function Kart(props) {
             >
               <i class="fa-solid fa-map-location"></i>
             </div>
+            <div
+              className="kartbutton"
+              onClick={() => {
+                window.open(
+                  `http://maps.apple.com/?daddr=${x.LokasyonX},${x.LokasyonY}`,
+                  "_blank"
+                );
+              }}
+            >
+              <i class="fa-solid fa-map-location"></i>
+            </div>
           </div>
         ))}
       </div>
