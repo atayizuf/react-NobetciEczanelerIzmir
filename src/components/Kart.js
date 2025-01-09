@@ -16,28 +16,30 @@ function Kart(props) {
                 <div className="aciklama">*** {x.BolgeAciklama} ***</div>
               )}
             </div>
-            <div
-              className="kartbutton"
-              onClick={() => {
-                window.open(
-                  `https://www.google.com/maps/place/${x.LokasyonX},${x.LokasyonY}/@${x.LokasyonX},${x.LokasyonY},17.25z`,
-                  // `https://www.google.com/maps/place/1566+sokak+doğanlar+İzmir+/@${x.LokasyonX},${x.LokasyonY},17.25z`,
-                  "_blank"
-                );
-              }}
-            >
-              <i class="fa-solid fa-map-location"></i>
-            </div>
-            <div
-              className="kartbutton"
-              onClick={() => {
-                window.open(
-                  `http://maps.apple.com/?daddr=${x.LokasyonX},${x.LokasyonY}`,
-                  "_blank"
-                );
-              }}
-            >
-              <i class="fa-solid fa-map-location"></i>
+            <div className="links">
+              <div
+                className="kartbutton"
+                onClick={() => {
+                  window.open(
+                    `https://www.google.com/maps/place/${x.LokasyonX},${x.LokasyonY}/@${x.LokasyonX},${x.LokasyonY},17.25z`,
+                    // `https://www.google.com/maps/place/1566+sokak+doğanlar+İzmir+/@${x.LokasyonX},${x.LokasyonY},17.25z`,
+                    "_blank"
+                  );
+                }}
+              >
+                <i class="fa-brands fa-android"></i>
+              </div>
+              <div
+                className="kartbutton1"
+                onClick={() => {
+                  window.open(
+                    `http://maps.apple.com/?daddr=${x.LokasyonX},${x.LokasyonY}`,
+                    "_blank"
+                  );
+                }}
+              >
+                <i class="fa-brands fa-apple"></i>
+              </div>
             </div>
           </div>
         ))}
