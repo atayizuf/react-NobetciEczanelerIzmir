@@ -20,7 +20,6 @@
 .arama {
   width: 85%;
   height: 2.5rem;
-  /* border-radius: 5%; */
   margin-bottom: 1rem;
   font-size: 1.5rem;
   outline: none;
@@ -29,13 +28,12 @@
 
 input::placeholder {
   opacity: 0.5;
-  padding-left: 15px;
-  font-size: 1.5rem;
+  padding-left: 1rem;
+  font-size: 1rem;
 }
 
 .yukleniyor {
   font-size: 1.5rem;
   color: aliceblue;
-  padding: 15px 0 0 0;
   font-family: "JetBrains Mono", monospace;
 }
