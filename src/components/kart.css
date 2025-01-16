@@ -35,7 +35,8 @@
   display: block;
 }
 
-.kartbutton {
+.kartbutton,
+.kartbutton1 {
   width: 20%;
   height: 50%;
   background-color: #169453;
@@ -54,21 +55,15 @@
 }
 
 .kartbutton1 {
-  width: 20%;
-  height: 50%;
   background-color: #494e53;
-  position: absolute;
-  border-radius: 0 0 0.7rem 0;
-  right: 0;
   top: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-weight: bold;
-  font-size: 3rem;
-  color: #e6e6fa;
-  user-select: none;
+  border-radius: 0 0 0.7rem 0;
+}
+
+.kartbutton {
+  background-color: #169453;
+  top: 0%;
+  border-radius: 0 0.7rem 0 0;
 }
 
 .kartbutton:hover,
@@ -103,8 +98,8 @@
   font-weight: bold;
 }
 
-.tel > a{
-  color:#e6e6fa;
+.tel > a {
+  color: #e6e6fa;
   text-decoration: none;
   cursor: pointer;
 }

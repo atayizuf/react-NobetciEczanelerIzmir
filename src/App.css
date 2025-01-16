@@ -1,19 +1,34 @@
 .App {
   text-align: center;
-  width: 100%;
+  width: 95vw;
 }
 .baslik1 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: aliceblue;
   padding: 25px 30px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.baslikim {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: aliceblue;
+  padding: 15px 0 0 0;
   font-family: "JetBrains Mono", monospace;
 }
 
 .arama {
   width: 85%;
   height: 2.5rem;
-  border-radius: 7px;
+  border-radius: 5%;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   outline: none;
+  font-family: "JetBrains Mono", monospace;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  padding-left: 15px;
+  font-size: 1rem;
 }
