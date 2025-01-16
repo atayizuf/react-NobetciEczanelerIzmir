@@ -4,6 +4,7 @@ import Baslik from "./Baslik";
 
 function Cekici() {
   const [veriler, setVeriler] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("https://openapi.izmir.bel.tr/api/ibb/nobetcieczaneler")
@@ -13,13 +14,14 @@ function Cekici() {
           return a.Bolge.localeCompare(b.Bolge);
         });
         setVeriler(resp);
+        setLoading(false);
       });
   }, []);
 
   return (
     <div>
       <Baslik />
-      <Arama veriler={veriler} />
+      <Arama veriler={veriler} loading={loading} />
     </div>
   );
 }

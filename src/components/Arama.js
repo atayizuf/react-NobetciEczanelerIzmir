@@ -25,7 +25,11 @@ function Arama(props) {
         placeholder="Bölge Adı ile arama yapın..."
         ara={ara}
       ></input>
-      <Kart veri2={ara === "" ? props.veriler : veri2} arama={ara} />
+      {props.loading === false ? (
+        <Kart veri2={ara === "" ? props.veriler : veri2} arama={ara} />
+      ) : (
+        <div className="yukleniyor">Eczanaler Yükleniyor...</div>
+      )}
     </div>
   );
 }

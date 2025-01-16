@@ -3,7 +3,7 @@ import React from "react";
 function Baslik() {
   return (
     <>
-      <div className="baslikim">izmir</div>
+      <div className="baslikim">IZMIR</div>
       <div className="baslik1">NÖBETÇİ ECZANELERİ</div>
     </>
   );
