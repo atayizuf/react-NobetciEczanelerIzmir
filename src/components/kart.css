@@ -3,6 +3,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .kart {
   position: relative;
@@ -100,4 +101,10 @@
 .adres {
   padding-bottom: 0.35rem;
   font-weight: bold;
+}
+
+.tel > a{
+  color:#e6e6fa;
+  text-decoration: none;
+  cursor: pointer;
 }

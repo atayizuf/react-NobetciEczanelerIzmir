@@ -5,16 +5,12 @@ function Arama(props) {
   const [ara, setAra] = useState("");
   const [veri2, setVeri2] = useState([]);
 
-  // componentDidMount(() => {
-  //   setVeri2(props.veriler);
-  // });
-
   useEffect(() => {
     setVeri2(
       props.veriler.filter((x) => {
         return ara === ""
           ? x
-          : x.Bolge.toLowerCase().includes(ara.toLowerCase());
+          : x.Bolge.toLocaleLowerCase().includes(ara.toLocaleLowerCase());
       })
     );
   }, [ara]);

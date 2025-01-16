@@ -6,11 +6,11 @@ function Kart(props) {
     <>
       <div className="kapskart">
         {props.veri2.map((x) => (
-          <div className="kart" key={x.LokasyonX}>
+          <div className="kart">
             <div className="kartyazi">
               <div className="bolge">{x.Bolge}</div>
               <div className="ad">{x.Adi}</div>
-              <div className="tel">{x.Telefon}</div>
+              <div className="tel"><a href={"tel:"+x.Telefon} target="_blank">{x.Telefon}</a></div>
               <div className="adres">{x.Adres}</div>
               {x.BolgeAciklama && (
                 <div className="aciklama">*** {x.BolgeAciklama} ***</div>
