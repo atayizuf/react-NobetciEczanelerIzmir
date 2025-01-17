@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Kart from "./Kart";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Arama(props) {
   const [ara, setAra] = useState("");
@@ -28,7 +29,10 @@ function Arama(props) {
       {props.loading === false ? (
         <Kart veri2={ara === "" ? props.veriler : veri2} arama={ara} />
       ) : (
-        <div className="yukleniyor">Eczanaler Yükleniyor...</div>
+        <>
+         <div className="yukleniyor">Eczanaler Yükleniyor...</div>
+          <div className="spinner-border text-danger" role="status" />
+        </>
       )}
     </div>
   );

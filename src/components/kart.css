@@ -89,7 +89,6 @@
   font-size: 1.2rem;
 }
 
-.tel,
 .adres {
   padding-bottom: 0.35rem;
   font-weight: bold;
@@ -99,4 +98,12 @@
   color: #e6e6fa;
   text-decoration: none;
   cursor: pointer;
+  background-color: #8f0f3a;
+  padding: 0.35rem;
+  border-radius: 5px;
+}
+
+.tel{
+  padding: 1rem 0;
+  font-weight: bold;
 }
