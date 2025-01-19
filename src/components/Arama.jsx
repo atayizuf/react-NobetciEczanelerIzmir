@@ -30,7 +30,9 @@ function Arama(props) {
         <Kart veri2={ara === "" ? props.veriler : veri2} arama={ara} />
       ) : (
         <>
-         <div className="yukleniyor">Eczanaler Yükleniyor...</div>
+          <div className="text-white">Eczane bilgileri günlük olarak güncellenmektedir.</div>
+          <div className="text-white">Gelen kartlar üzerinde, telefon numaralarına tıklayarak arama yapabilirsiniz.</div>
+          <div className="yukleniyor">Yükleniyor...</div>
           <div className="spinner-border text-danger" role="status" />
         </>
       )}

@@ -3,8 +3,8 @@ import React from "react";
 function Baslik() {
   return (
     <>
-      <div className="baslikim">IZMIR</div>
-      <div className="baslik1">NÖBETÇİ ECZANELERİ</div>
+      <h1 className="baslikim">IZMIR</h1>
+      <h3 className="baslik1">NÖBETÇİ ECZANELER</h3>
     </>
   );
 }
