@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { use } from "react";
+import React from "react";
 
 function Baslik(props) {
   function tarihAl(ver) {
