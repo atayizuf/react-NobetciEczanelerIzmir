@@ -3,7 +3,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 700px;
 }
 .kart {
   position: relative;
@@ -103,7 +103,7 @@
   border-radius: 5px;
 }
 
-.tel{
+.tel {
   padding: 1rem 0;
   font-weight: bold;
 }

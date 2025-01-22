@@ -20,7 +20,7 @@ function Cekici() {
 
   return (
     <div>
-      <Baslik />
+      <Baslik veriler={veriler} loading={loading} />
       <Arama veriler={veriler} loading={loading} />
     </div>
   );

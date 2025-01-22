@@ -1,11 +1,14 @@
 .App {
   text-align: center;
   width: 95vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.baslik1 {
+.baslik1,
+.tarihsel {
   font-size: 1rem;
   color: aliceblue;
-  padding: 25px 30px;
   font-family: "JetBrains Mono", monospace;
 }
 
